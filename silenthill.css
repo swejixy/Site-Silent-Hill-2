@@ -133,6 +133,88 @@ footer {
     background-color: #a33830;
 }
 
+.localizacao {
+    margin-top: 10px;
+    padding: 30px 0;
+}
+
+.localizacao h2 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.localizacao-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.mapa {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    object-fit: cover;
+    border: 2px solid #e3e7e6;
+}
+
+.endereco {
+    border: 2px solid #e3e7e6;
+    padding: 20px;
+}
+
+.endereco h3 {
+    font-family: 'Special Elite', serif;
+    margin: 0 0 10px 0;
+}
+
+.endereco p {
+    font-family: Arial, sans-serif;
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+.faq {
+    margin-top: 10px;
+    padding: 30px 0;
+}
+
+.faq h2 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.faq details {
+    border: 2px solid #e3e7e6;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+}
+
+.faq summary {
+    font-family: 'Special Elite', serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.faq summary:hover {
+    color: #8b2a24;
+}
+
+.faq details[open] summary {
+    margin-bottom: 10px;
+}
+
+.faq details p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
 @media screen and (max-width: 768px) {
     body {
         background-color: #7d8785;
@@ -151,6 +233,22 @@ footer {
     }
     .cards {
         flex-direction: column;
+    }
+
+    .localizacao-grid {
+    grid-template-columns: 1fr;
+    }
+
+    .mapa {
+    height: 250px;
+    }
+
+    .faq summary {
+    font-size: 16px;
+    }
+
+    .faq details {
+    padding: 12px 15px;
     }
 }
 
